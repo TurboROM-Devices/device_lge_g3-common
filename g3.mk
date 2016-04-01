@@ -198,3 +198,7 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf
+    
+# ViPER4Android
+PRODUCT_COPY_FILES += \
+      vendor/turbo/prebuilt/common/app/ViPER4Android.apk:system/app/ViPER4Android/ViPER4Android.apk
