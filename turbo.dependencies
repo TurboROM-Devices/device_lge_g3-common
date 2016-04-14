@@ -22,5 +22,5 @@
     "target_path": "vendor/lge",
     "remote": "github",
     "branch": "mm"
-  },
+  }
 ]
