@@ -83,6 +83,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     $(LOCAL_PATH)/configs/audio/audio_policy.conf:system/etc/audio_policy.conf
 
+# ViPER4Android
+PRODUCT_PACKAGES += \
+    ViPER4Android
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     hwaddrs
@@ -197,7 +201,3 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf
-    
-# ViPER4Android
-PRODUCT_COPY_FILES += \
-      vendor/turbo/prebuilt/app/ViPER4Android.apk:system/app/ViPER4Android/ViPER4Android.apk
