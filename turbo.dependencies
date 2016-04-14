@@ -16,5 +16,11 @@
     "target_path": "external/connectivity",
     "remote": "cm",
     "branch": "cm-13.0"
-  }
+  },
+  {
+    "repository": "TurboROM-Devices/proprietary_vendor_lge",
+    "target_path": "vendor/lge",
+    "remote": "github",
+    "branch": "mm"
+  },
 ]
