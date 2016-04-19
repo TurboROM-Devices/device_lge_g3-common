@@ -201,3 +201,7 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf
+
+# BSOD killer
+PRODUCT_COPY_FILES += \
+    device/lge/g3-common/prebuilt/etc/init.d/89bsod:system/etc/init.d/89bsod
