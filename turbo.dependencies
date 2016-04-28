@@ -1,9 +1,9 @@
 [
   {
-    "repository": "CandyDevices/kernel_lge_g3",
+    "repository": "xX-Yoshi-Xx/Nebula-Kernel-G3",
     "target_path": "kernel/lge/g3",
     "remote": "github",
-    "branch": "c6"
+    "branch": "nebula-mmfinal"
   },
   {
     "repository": "TurboROM/device_qcom_common",
