@@ -382,14 +382,6 @@ service mpdecision /system/bin/mpdecision --avg_comp
     group system
     disabled
 
-service thermal-engine /system/bin/thermal-engine
-   class main
-   user root
-   group root
-   socket thermal-send-client stream 0666 system system
-   socket thermal-recv-client stream 0660 system system
-   socket thermal-recv-passive-client stream 0666 system system
-
 service time_daemon /system/bin/time_daemon
    class late_start
    user root
@@ -493,6 +485,13 @@ service sensors /system/bin/sensors.qcom
     user root
     group root
     disabled
+
+# OSS thermal management
+service thermanager /system/bin/thermanager /system/etc/thermanager.xml
+    seclabel u:r:thermanager:s0
+    class late_start
+    user root
+    group root
 
 on property:bluetooth.isEnabled=true
     write /sys/class/bluetooth/hci0/idle_timeout 7000
