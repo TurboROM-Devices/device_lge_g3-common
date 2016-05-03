@@ -1,9 +1,9 @@
 [
   {
-    "repository": "xX-Yoshi-Xx/Nebula-Kernel-G3",
+    "repository": "xX-Yoshi-Xx/Yoshi-Kernel-LGE-G3 ",
     "target_path": "kernel/lge/g3",
     "remote": "github",
-    "branch": "nebula-mmfinal"
+    "branch": "mm"
   },
   {
     "repository": "TurboROM/device_qcom_common",
