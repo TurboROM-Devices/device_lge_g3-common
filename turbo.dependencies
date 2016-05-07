@@ -1,6 +1,6 @@
 [
   {
-    "repository": "xX-Yoshi-Xx/Yoshi-Kernel-LG-G3 ",
+    "repository": "xX-Yoshi-Xx/Yoshi-Kernel-LG-G3",
     "target_path": "kernel/lge/g3",
     "remote": "github",
     "branch": "mm"
