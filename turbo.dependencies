@@ -28,5 +28,5 @@
     "target_path": "hardware/sony/thermanager",
     "remote": "github",
     "branch": "cm-13.0"
-  },
+  }
 ]
