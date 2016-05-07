@@ -64,7 +64,10 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxxhdpi-3072-hwu
 
 # Art
 PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dex2oat-swap=false
+    dalvik.vm.dex2oat-swap=false \
+    dalvik.vm.dex2oat-thread_count=4 \
+    dalvik.vm.image-dex2oat-filter=everything \
+    dalvik.vm.dex2oat-filter=everything 
 
 # Audio
 PRODUCT_PACKAGES += \
