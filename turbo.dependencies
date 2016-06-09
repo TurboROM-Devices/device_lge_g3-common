@@ -1,0 +1,14 @@
+[
+  {
+    "repository": "xX-Yoshi-Xx/Yoshi-Kernel-LG-G3",
+    "target_path": "kernel/lge/g3",
+    "remote": "gh",
+    "branch": "mm-3.4.112"
+  },
+  {
+    "repository": "device_qcom_common",
+    "target_path": "device/qcom/common",
+    "remote": "turbo",
+    "branch": "m"
+  }
+]
