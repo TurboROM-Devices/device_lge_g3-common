@@ -48,9 +48,10 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x0008000 --ramdisk_offset 0x2000000
 TARGET_KERNEL_SOURCE := kernel/lge/g3
 
 ifeq ($(filter d852, $(TARGET_DEVICE)),)
-TARGET_GCC_VERSION_ARM := 4.9
+KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9/bin
 else
-TARGET_GCC_VERSION_ARM := 4.8
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
 endif
 
 # Audio
