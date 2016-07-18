@@ -49,7 +49,7 @@ TARGET_KERNEL_SOURCE := kernel/lge/g3
 
 ifeq ($(filter d852, $(TARGET_DEVICE)),)
 KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9/bin
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-5.3/bin
 else
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
 endif
