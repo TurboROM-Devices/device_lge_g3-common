@@ -93,7 +93,7 @@ on boot
 on property:sys.boot_completed=1
     trigger enable-low-power
 
-    setprop sys.io.scheduler bfq
+    setprop sys.io.scheduler row
     setprop ro.qualcomm.perf.cores_online 2
 
 on property:init.svc.recovery=running
