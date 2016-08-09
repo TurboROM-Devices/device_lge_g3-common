@@ -85,6 +85,14 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/lge_touch/tap_to_wake"
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
 
+# Dex pre-optimization
+OS_TYPE := $(shell uname -s)
+ifneq ($(OS_TYPE),Darwin)
+    WITH_DEXPREOPT ?= true
+else
+    WITH_DEXPREOPT := false
+endif
+
 # Display
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
